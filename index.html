@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie of the Month</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Movie Watchlist</div>
+    <nav class="site-nav">
+      <a href="#current">Current pick</a>
+      <a href="#archive">Previous months</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="current">
+      <div class="poster-wrapper">
+        <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=900&q=80" alt="Movie poster placeholder" class="poster">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Jan 2026 • Current watch</p>
+        <h1 class="title">The Night City Chronicles</h1>
+        <p class="description">A hardboiled detective is drawn into a neon-drenched conspiracy that spans the city skyline. The closer he gets to the truth, the more the world around him fractures in unexpected ways. (IMDB description placeholder.)</p>
+        <div class="cta-row">
+          <a class="button primary" href="#newsletter">Get updates</a>
+          <a class="button ghost" href="#contact">Join the discussion</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive" id="archive">
+      <div class="section-heading">
+        <p class="eyebrow">Catch up</p>
+        <h2>Previous months</h2>
+        <p class="lede">Rewatch the essays, read the scripts, and jump into the conversation even if you joined mid-year.</p>
+      </div>
+
+      <div class="archive-grid">
+        <article class="archive-card">
+          <div class="media">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="December video" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <p class="eyebrow">Dec 2025</p>
+            <h3>Shadows Over the Harbor</h3>
+            <p class="card-text">A moody noir set in a rain-soaked port town. The script dives into lighting contrasts and the film's layered symbolism.</p>
+            <a class="link" href="#">Read the full script</a>
+          </div>
+        </article>
+
+        <article class="archive-card">
+          <div class="media">
+            <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" title="November video" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <p class="eyebrow">Nov 2025</p>
+            <h3>Beyond the Horizon</h3>
+            <p class="card-text">A sweeping sci‑fi epic about first contact. The script focuses on sound design and the film's contemplative pacing.</p>
+            <a class="link" href="#">Read the full script</a>
+          </div>
+        </article>
+
+        <article class="archive-card">
+          <div class="media placeholder">
+            <div class="placeholder-inner">More archives coming soon</div>
+          </div>
+          <div class="card-body">
+            <p class="eyebrow">Library</p>
+            <h3>Want to add a past month?</h3>
+            <p class="card-text">Drop in another video embed and script link here so newcomers can binge the full year.</p>
+            <a class="link" href="#">Add to the archive</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="section-heading">
+        <p class="eyebrow">Stay in the loop</p>
+        <h2>Newsletter sign-up</h2>
+        <p class="lede">Pick your email service and wire the form action to start sending essays, scripts, and watch party details.</p>
+      </div>
+      <form class="newsletter-form" action="https://example.com/your-newsletter-endpoint" method="post">
+        <label class="form-label" for="email">Email address</label>
+        <div class="form-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="button primary">Subscribe</button>
+        </div>
+        <p class="fine-print">Replace the form action with your preferred newsletter service (e.g., Substack, Beehiiv, Mailchimp).</p>
+      </form>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Connect</p>
+        <h2>Contact & community</h2>
+        <p class="lede">Reach out, follow along, or hop into Discord to discuss the current pick.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <a class="link" href="mailto:you@example.com">you@example.com</a>
+        </div>
+        <div class="contact-item">
+          <h3>Social</h3>
+          <ul class="social-list">
+            <li><a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://bsky.app" target="_blank" rel="noreferrer">BlueSky</a></li>
+            <li><a href="https://joinmastodon.org" target="_blank" rel="noreferrer">Mastodon</a></li>
+          </ul>
+        </div>
+        <div class="contact-item">
+          <h3>Discord</h3>
+          <a class="button primary" href="https://discord.com" target="_blank" rel="noreferrer">Join the server</a>
+          <p class="fine-print">Swap this link for your invite URL.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made for video essays • Built for GitHub Pages</p>
+  </footer>
+</body>
+</html>
