@@ -31,15 +31,16 @@ a:hover { text-decoration: underline; }
 .site-header {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 24px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background: rgba(15, 17, 22, 0.9);
+  background: rgba(7 22 61 / 90%);
   backdrop-filter: blur(12px);
   z-index: 10;
+  border-radius: 24px;
 }
 
 .logo {
@@ -49,7 +50,7 @@ a:hover { text-decoration: underline; }
 
 .site-nav a {
   margin-left: 16px;
-  color: var(--muted);
+  color: var(--text);
   font-weight: 600;
 }
 
